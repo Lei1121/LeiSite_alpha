@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="shortcut icon" href="http://www.easyicon.net/api/resizeApi.php?id=1185925&size=16"/>
+    <title>假苹果</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <style type="text/css">
+        .x {
+            position: absolute;
+            z-index: -1;
+            width: 100%; /*use this*/
+        }
+        .xfather {
+            height: 765px;
+        }
+    </style>
+    <style>
+        /* by Kai */
+        body {
+            margin: 0;
+            padding-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+        strong {
+            display: block;
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        /* NAV */
+        .nav-under, .nav-top {
+            width: 100%;
+        }
+        .nav-under a, .nav-top a {
+            display: inline-block;
+            text-align:center;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-top a:hover, .nav-under a:hover {
+            color: black;
+            background: white;
+        }
+        /* NAV-TOP */
+        .nav-top {
+            background-color: black;
+            position:fixed;
+        }
+        .nav-top a {
+            width: 13.75%;
+            color: white;
+            line-height: 40px;
+        }
+        /* NAV-UNDER */
+        .nav-under {
+            padding-top: 40px;
+        }
+        .nav-under a {
+            width: 19.5%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .nav-under img {
+            height: 30px;
+        }
+        .nav-under {
+            background-color: rgba(0,0,0,0.2);
+        }
+        .nav-under li {
+            width: 20%;
+        }
+        .nav-under li a img {
+            height: 60px; /* img controls the height of li */
+        }
+        /* middle */
+        .x2 {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <!--  首行导航 -->
+    <div class="nav-top">
+        <a href="/zhihu"><img src="/static/small_apple.png"/></a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">Music</a>
+        <a href="#">技术支持</a>
+    </div>
+    <!--  第二行导航 -->
+    <div class="nav-under">
+        <a href="#">
+            <img src="http://www.easyicon.net/api/resizeApi.php?id=1194487&size=128"/>
+            <strong>iPhone6s</strong>
+        </a>
+        <a href="#">
+            <img src="http://www.easyicon.net/api/resizeApi.php?id=1194487&size=128"/>
+            <strong>iPhone6</strong>
+        </a>
+        <a href="#">
+            <img src="http://www.easyicon.net/api/resizeApi.php?id=1194487&size=128"/>
+            <strong>iPhone5s</strong>
+        </a>
+        <a href="#">
+            <img src='http://www.easyicon.net/api/resizeApi.php?id=1190341&size=128'/>
+            <strong>配件</strong>
+        </a>
+        <a href="#">
+            <img src='http://www.easyicon.net/api/resizeApi.php?id=1161752&size=128'/>
+            <strong>机型比较</strong>
+        </a>
+    </div>
+    <div class="xfather">
+        <img class='x' src="http://images.apple.com/cn/iphone/home/images/hero_6s_large.png">
+        <!--  6s字 -->
+        <h1 style=" text-align:center;">iPhone6s</h1>
+        <!-- 6s图片及图片上文字 -->
+        <h3 align="center">
+                唯一的不同，是处处都不同。
+        </h3>
+        <div align="center">
+            <span class="x2"><a href="#">一点不都感兴趣</a> <b>></b></span>
+            <span class="x2"><a href="#">退货</a> <b>></b></span>
+        </div>
+    </div>
+
+    <div><em>想要加在图片下面的文字</em></div>
+    <!-- footer -->
+    <footer class="footer">
+        Lei.2015
+    </footer>
+</div>
+</body>
