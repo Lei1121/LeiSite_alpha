@@ -15,4 +15,5 @@ def fakemicrosoft(request):
 def index(request):
     return render_to_response('index.html')
 
-
+def JD(request):
+    return render_to_response('JD.html')

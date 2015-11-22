@@ -2,8 +2,34 @@
 <html>
     <head>
         <meta charset='urf-8'>
+        <link rel='icon' href='http://www.easyicon.net/api/resizeApi.php?id=1165122&size=16'/>
         <title>Welcome | Lei's site</title>
         <style type="text/css">
+            body{
+                margin: 0;
+                font-family: tahoma;
+            }
+            .navi ul{
+                width:100%;
+                height:120px;
+                margin:0;
+                padding:0;
+            }
+            .navi ul li{
+                float:left;
+                list-style: none;
+                margin: 30px;
+                font-size: 30px;
+            }
+            .navi ul li a{
+                text-align:center;
+                text-decoration:none;
+                font-size: 30px;
+                color: white;
+            }
+            .navi ul li a:hover{
+                opacity:0.5;
+            }
             .footer{
                 position: fixed;
                 bottom: 0;
@@ -14,6 +40,7 @@
                 font-size: 21px;
                 color: silver;
                 text-align: center;
+                opacity:0.4;
             }
             .container{
                 padding-bottom: 100px;
@@ -22,15 +49,31 @@
     </head>
     <body>
         <div class='container'>
-            <a href='/'>Home</a>
-            <a href='/fakeapple'>fake apple</a>
-            <a href='/fakemicrosoft'>fake microsoft</a>
-            <a href='/zhihu'>zhihu</a>
+            <div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">
+                <img src="/static/139-150324091340.jpg" height="100%" width="100%">
+            </div>
+            <div class='navi'>
+                <ul>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/fakeapple'>fakeApple</a>
+                    </li>
+                    <li>
+                        <a href='/fakemicrosoft'>fakeMicrosoft</a>
+                    </li>
+                    <li>
+                        <a href='/JD'>JD</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class='footer'>
-                <span>
+                <div>
                     <i>by Lei</i>
                      - 2015
-                </span>
+                </div>
             </div>
         </div>
     </body>

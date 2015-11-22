@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^fakeapple$', views.fakeapple),
     url(r'^zhihu$', views.zhihu),
     url(r'^fakemicrosoft$', views.fakemicrosoft),
+    url(r'^JD$', views.JD),
 ]
 

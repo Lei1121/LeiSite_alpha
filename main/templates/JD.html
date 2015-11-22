@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>京东</title>
+    <link href='http://www.jd.com/favicon.ico' rel='icon'/>
+    <style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .topbanner{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(241,241,241);
+        position: absolute;
+    }
+    .dropbar{
+        margin-left: 55px;
+        margin-top: 10px;
+    }
+    .order{
+        margin-left: 20px;
+    }
+    .order a{
+        text-decoration: none;
+    }
+    .toright{
+        margin-left: 800px;
+    }
+    .adbanner img{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+    .searching{
+        width: 100%;
+        text-align: center;
+        height: 50%;
+    }
+    .subsearching{
+        width: 400px;
+        height: 100px;
+        display: inline-block;
+        margin: 8px;
+    }
+    .subsearching img{
+        display: inline-block;
+    }
+    .input{
+        width: 250px;
+        border: 2px solid rgb(182,29,29);
+    }
+    </style>
+</head>
+
+<body>
+    <div class='topbanner'>
+        <!-- 首行导航-->
+        <div class='dropbar'>
+            <span>
+                送至：
+            </span>
+            <select name="select">
+                    <option value="1" title= '首都北京'>北京</option>
+                    <option value="2">上海</option>
+                    <option value="3">天津</option>
+                    <option value="4">重庆</option>
+            </select>
+            <span class='toright'>
+                <span class='order'>
+                    <a href='#'>
+                        我的京东
+                    </a>
+                </span>
+                <span class='order'>
+                    <a href='#'>
+                        我的订单
+                    </a>
+                </span>
+            </span>
+        </div>
+    </div>
+    <!-- 广告栏-->
+    <div class='adbanner'>
+        <img src='/static/JDpic/adbanner.png'>
+    </div>
+    <!-- logo、搜索栏、购物车-->
+    <div class='searching'>
+            <span class='subsearching'>
+                <img src='/static/JDpic/logo.png'>
+            </span>
+            <span class="subsearching">
+                <input name="keyword" type="text" class="input" value=""/>
+                <input name="button" type="image" class="btn" value="搜索"/>
+            </span>
+            <span class="subsearching">
+                <div>购物车</div>
+            </span>
+    </div>
+</form>
+
+</body>
+</html>

@@ -8,8 +8,13 @@
             body{
                 margin: 0;
             }
-            #banner{
+            #banner1{
                 width: 100%;
+                position: fixed;
+            }
+            #banner2{
+                width: 100%;
+                margin-top: 49px;
             }
             #mainlist{
                 width: 100%;
@@ -21,24 +26,51 @@
                 width: 20%;
                 display: inline-block;
                 margin: 2%;
-
             }
+
             .list img {
                 width: 100%;
             }
-
+            .nounderline {
+                text-decoration: none;
+                color: black;
+            }
+            .nounderline:hover {
+                opacity: 0.5;
+            }
         </style>
     </head>
     <body>
         <div>
-            <img id='banner' src='/static/microheader.png'>
+            <img id='banner1' src='/static/weiruanbanner1.png'>
+            <img id='banner2' src='/static/weiruanbanner2.png'>
         </div>
         <div id='mainlist'>
             <div>
-                <div class='list'><img src='/static/MMD_TCFamily_1006_540x304.jpg'></div>
-                <div class='list'><img src='/static/Ofc_2016Gray_0820_540x304_ZH_CN.png'></div>
-                <div class='list'><img src='/static/Store_Family_0303_540x304_EN_US.jpg'></div>
-                <div class='list'><img src='/static/Win10_GA_1002_540x304_EN_US.jpg'></div>
+                <div class='list'>
+                    <a class='nounderline' href='#'>
+                        <img src='/static/MMD_TCFamily_1006_540x304.jpg'>
+                        <span>Lumia 950 和 Lumia 950 XL 在像 PC 一样工作的手机上完成更多工作</span>
+                    </a>
+                </div>
+                <div class='list'>
+                    <a class='nounderline' href='#'>
+                        <img src='/static/Ofc_2016Gray_0820_540x304_ZH_CN.png'>
+                        <span>Lumia 950 和 Lumia 950 XL 在像 PC 一样工作的手机上完成更多工作</span>
+                    </a>
+                </div>
+                <div class='list'>
+                    <a class='nounderline' href='#'>
+                        <img src='/static/Store_Family_0303_540x304_EN_US.jpg'>
+                        <span>Lumia 950 和 Lumia 950 XL 在像 PC 一样工作的手机上完成更多工作</span>
+                    </a>
+                </div>
+                <div class='list'>
+                    <a class='nounderline' href='#'>
+                        <img src='/static/Win10_GA_1002_540x304_EN_US.jpg'>
+                        <span>Lumia 950 和 Lumia 950 XL 在像 PC 一样工作的手机上完成更多工作</span>
+                    </a>
+                </div>
             </div>
         </div>
     </body>
