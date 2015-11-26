@@ -6,7 +6,10 @@
     <style type="text/css">
         body{
             margin: 0;
-            padding: 0;
+            padding-top: 50px;
+            width: 100%;
+        }
+        .container {
             width: 100%;
         }
         .topbanner{
@@ -18,7 +21,10 @@
             left: 0;
         }
         .dropbar{
-            padding: 15px 10%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-right: 10%;
+            padding-left: 10%;
         }
         .order{
             margin-left: 20px;
@@ -31,73 +37,175 @@
         }
         .dbanner {
             width: 100%;
-            margin-top: 50px;
         }
         .dbanner img{
             width: 100%;
         }
-        .secondRow{
+        .searchRow{
             width: 100%;
-            text-align: center;
+            padding-right: 10%;
+            padding-left: 10%;
         }
-        .secondRow-item{
-            width: 30%;
+        .searchRow-item{
+            width: 25%;
             display: inline-block;
             height: 105px;
             line-height: 105px;
             vertical-align: top;
+            text-align: center;
         }
-        .input{
-            width: 250px;
+        .searching{
+            width: 80%;
+            height: 44px;
             border: 2px solid rgb(182,29,29);
         }
-
+        .middle{
+            text-align: center;
+        }
+        .searchbtn{
+            color: white;
+            background-color: rgb(182,29,29);
+            height: 44px;
+            width: 15%;
+        }
+        .cart{
+            background-color: silver;
+            padding:7px;
+            border: 1px solid gray;
+        }
+        .cart img{
+            width: 15px;
+            height: 15px;
+        }
+        .classfication-row{
+            width: 100%;
+            border-bottom:2px solid rgb(182,29,29);
+            height: 45px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .classification{
+            width: 12%;
+            line-height: 45px;
+            padding: 0px 10px;
+            background: rgb(182,29,29);
+            display: inline-block;
+            text-align: center;
+            color: white;
+        }
+        .classification:hover {
+            font-weight: bolder;
+        }
+        .classfication-row a {
+            text-decoration: none;
+            color: silver;
+        }
+        .classfication-row a:hover{
+            color: gray;
+            font-weight: bold;
+        }
+        .classfication-row .itemlink{
+            line-height: 45px;
+            display: inline-block;
+            vertical-align: bottom;
+            width: 6%;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class='topbanner'>
-        <!-- 首行导航-->
-        <div class='dropbar'>
-            <span>
-                送至：
-            </span>
-            <select name="select">
-                    <option value="1" title= '首都北京'>北京</option>
-                    <option value="2">上海</option>
-                    <option value="3">天津</option>
-                    <option value="4">重庆</option>
-            </select>
-            <span class='toright'>
-                <span class='order'>
-                    <a href='#'>
-                        我的京东
-                    </a>
+    <div class="container">
+        <div class='topbanner'>
+            <!-- 首行导航-->
+            <div class='dropbar'>
+                <span>
+                    送至：
                 </span>
-                <span class='order'>
-                    <a href='#'>
-                        我的订单
-                    </a>
+                <select name="select">
+                        <option value="1" title= '首都北京'>北京</option>
+                        <option value="2">上海</option>
+                        <option value="3">天津</option>
+                        <option value="4">重庆</option>
+                </select>
+                <span class='toright'>
+                    <span class='order'>
+                        <a href='#'>
+                            我的京东
+                        </a>
+                    </span>
+                    <span class='order'>
+                        <a href='#'>
+                            我的订单
+                        </a>
+                    </span>
                 </span>
-            </span>
+            </div>
         </div>
-    </div>
-    <!-- 广告栏-->
-    <div class='dbanner'>
-        <img src='/static/JDpic/dbanner.png'>
-    </div>
-    <!-- logo、搜索栏、购物车-->
-    <div class='secondRow'>
-        <div class="secondRow-item">
-            <img src='/static/JDpic/logo.png'>
+        <!-- 广告栏-->
+        <div class='dbanner'>
+            <img src='/static/JDpic/dbanner.png'>
         </div>
-        <div class='secondRow-item'>
-            <span>搜索栏</span>
+        <!-- logo、搜索栏、购物车-->
+        <div class='searchRow'>
+            <div class="searchRow-item">
+                <img src='/static/JDpic/logo.png'>
+            </div>
+            <div class='searchRow-item'>
+                <form action='' class='middle'>
+                    <input class='searching' type="text" name="searching" />
+                    <input type="button" class='searchbtn'value="搜索" onclick="" />
+                </form>
+            </div>
+            <div class='searchRow-item'>
+                <span class="cart">
+                    <span>
+                        <img src='http://www.easyicon.net/api/resizeApi.php?id=1182217&size=24'>
+                    </span>
+                    <span>
+                        我的购物车
+                    </span>
+                    <span>
+                        <img src='http://www.easyicon.net/api/resizeApi.php?id=1190966&size=24'>
+                    </span>
+                </span>
+            </div>
         </div>
-        <div class='secondRow-item'>
-            <span>购物车</span>
-        </div>
-    </div>
 
+        <div class='classfication-row'>
+            <a href='#'>
+                <div class='classification'>
+                    全部商品分类
+                </div>
+            </a>
+            <a href="">
+                <div class='itemlink'>服装城</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>美妆馆</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>超市</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>全球购</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>闪购</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>团购</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>拍卖</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>金融</div>
+            </a>
+            <a href="">
+                <div class='itemlink'>智能</div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
