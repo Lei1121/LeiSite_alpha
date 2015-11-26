@@ -16,8 +16,8 @@
         position: absolute;
     }
     .dropbar{
-        margin-left: 55px;
-        margin-top: 10px;
+        padding: 15px 10%;
+
     }
     .order{
         margin-left: 20px;
@@ -26,26 +26,30 @@
         text-decoration: none;
     }
     .toright{
-        margin-left: 800px;
+        float: right;
+
     }
     .adbanner img{
         width: 100%;
-        height: auto;
+
         padding-top: 50px;
     }
-    .searching{
+
+    .secondRow{
         width: 100%;
         text-align: center;
-        height: 50%;
+
     }
-    .subsearching{
-        width: 400px;
-        height: 100px;
+    .secondRow-item{
+        width: 30%;
         display: inline-block;
-        margin: 8px;
+        height: 105px;
+        line-height: 105px;
     }
-    .subsearching img{
-        display: inline-block;
+    .secondRow-item.logo img{
+        width: 100%;
+        height: 105px;
+        display: inline;
     }
     .input{
         width: 250px;
@@ -86,19 +90,17 @@
         <img src='/static/JDpic/adbanner.png'>
     </div>
     <!-- logo、搜索栏、购物车-->
-    <div class='searching'>
-            <span class='subsearching'>
-                <img src='/static/JDpic/logo.png'>
-            </span>
-            <span class="subsearching">
-                <input name="keyword" type="text" class="input" value=""/>
-                <input name="button" type="image" class="btn" value="搜索"/>
-            </span>
-            <span class="subsearching">
-                <div>购物车</div>
-            </span>
+    <div class='secondRow'>
+        <div class='secondRow-item logo'>
+            <img src='/static/JDpic/logo.png'>
+        </div>
+        <div class='secondRow-item'>
+            <span>搜索栏</span>
+        </div>
+        <div class='secondRow-item'>
+            <span>购物车</span>
+        </div>
     </div>
-</form>
 
 </body>
 </html>
