@@ -42,6 +42,8 @@
             width: 100%;
         }
         .searchRow{
+            box-sizing: border-box;
+            width: 100%;
             padding-right: 10%;
             padding-left: 10%;
         }
@@ -79,11 +81,13 @@
             width: 15px;
             height: 15px;
         }
-        .classfication-row{
-            border-bottom:2px solid rgb(182,29,29);
-            height: 45px;
+        .classfication-row {
+            box-sizing: border-box;
+            width: 100%;
             padding-left: 10%;
             padding-right: 10%;
+            border-bottom:2px solid rgb(182,29,29);
+            height: 45px;
         }
         .classification{
             width: 20%;
@@ -144,7 +148,7 @@
             </div>
         </div>
         <!-- 广告栏-->
-        <div class='dbanner'>
+        <div class='dbanner' onclick="alert('别点我')">
             <img src='/static/JDpic/dbanner.png'>
         </div>
         <!-- logo、搜索栏、购物车-->
