@@ -3,6 +3,7 @@
     <meta charset='utf-8'>
     <title>京东</title>
     <link href='http://www.jd.com/favicon.ico' rel='icon'/>
+    <script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
     <style type="text/css">
         body{
             margin: 0;
@@ -10,9 +11,9 @@
             width: 100%;
         }
         div {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box; /* Firefox */
-            -webkit-box-sizing: border-box; /* Safari */
+            box-sizing: border-box !important;
+            -moz-box-sizing: border-box !important; /* Firefox */
+            -webkit-box-sizing: border-box !important; /* Safari */
         }
         .container {
             width: 100%;
@@ -89,7 +90,7 @@
             width: 100%;
             padding-left: 10%;
             padding-right: 10%;
-            border-bottom:2px solid rgb(182,29,29);
+            border-bottom: 2px solid rgb(182,29,29);
             height: 45px;
         }
         .classification{
@@ -119,7 +120,6 @@
             text-align: center;
         }
         .inner{
-            box-sizing: border-box;
             width: 100%;
             padding-left: 10%;
             padding-right: 10%;
@@ -127,36 +127,44 @@
         .dd-inner{
             display: inline-block;
             vertical-align: top;
-            width: 21.6%;
+            width: 20%;
+            background-color: rgb(200,22,35);
         }
         .itemrow{
-            background-color: rgb(200,22,35);
             color: white;
             width: 100%;
             height: 31px;
             line-height: 31px;
+            padding: 0 10px;
         }
-        .innerimg img{
-            margin-top: 10px;
-            margin-left: 5px;
+        .itemrow:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+        .innerimg-div {
             display: inline-block;
             width: 55%;
-            height: 454px;
+            padding-top: 10px;
+            padding-left: 5px;
         }
-        .itemrowdescribe{
-            padding-left: 10px;
+        .innerimg img{
+            display: inline-block;
+            width: 100%;
         }
         .sidebar{
-            margin-left: 3px;
-            width: 22%;
+            width: 23%;
             display: inline-block;
             vertical-align: top;
-            height: 466px;
+            overflow: auto;
+        }
+        .noti {
+            border: 1px solid silver;
+            margin-top: 10px;
+            overflow-y: auto;
         }
         .news{
             width:100%;
-            border: 1px solid silver;
-            margin-top: 10px;
+            border-bottom: 1px solid silver;
         }
         .title{
             border-bottom: 1px solid silver;
@@ -180,9 +188,6 @@
         }
         .lifeservice{
             width:100%;
-            border-bottom: 1px solid silver;
-            border-left: 1px solid silver;
-            border-right: 1px solid silver;
         }
         .lifetitle{
             padding-left: 5px;
@@ -192,6 +197,13 @@
         }
 
     </style>
+    <script type="text/javascript">
+    $(function(){
+        var ddheight = $('.dd-inner').height();
+        $('.innerimg-div img').height(ddheight-10);
+        $('.sidebar .noti').height(ddheight-10-2);
+    });
+    </script>
 </head>
 
 <body>
@@ -287,90 +299,92 @@
         <div class='inner'>
             <div class='dd-inner'>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>家用电器</div>
+                    <div class='itemrow_describe'>家用电器</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>手机、数码</div>
+                    <div class='itemrow_describe'>手机、数码</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>电脑、办公</div>
+                    <div class='itemrow_describe'>电脑、办公</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>家居、家具</div>
+                    <div class='itemrow_describe'>家居、家具</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>男装、女装</div>
+                    <div class='itemrow_describe'>男装、女装</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>个护化妆</div>
+                    <div class='itemrow_describe'>个护化妆</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>鞋靴、箱包</div>
+                    <div class='itemrow_describe'>鞋靴、箱包</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>运动户外</div>
+                    <div class='itemrow_describe'>运动户外</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>汽车、汽车用品</div>
+                    <div class='itemrow_describe'>汽车、汽车用品</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>母婴、玩具乐器</div>
+                    <div class='itemrow_describe'>母婴、玩具乐器</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>视频、酒类</div>
+                    <div class='itemrow_describe'>视频、酒类</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>营养保健</div>
+                    <div class='itemrow_describe'>营养保健</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>图书、音像</div>
+                    <div class='itemrow_describe'>图书、音像</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>彩票、旅行</div>
+                    <div class='itemrow_describe'>彩票、旅行</div>
                 </div>
                 <div class='itemrow'>
-                    <div class='itemrowdescribe'>理财、众筹</div>
+                    <div class='itemrow_describe'>理财、众筹</div>
                 </div>
             </div>
-            <a class='innerimg'>
-                <img src='/static/JDpic/middlepic.png'>
-                </img>
-            </a>
+            <div class="innerimg-div">
+                <a class='innerimg' href="#">
+                    <img src='/static/JDpic/middlepic.png'/>
+                </a>
+            </div>
             <div class='sidebar'>
-                <div class='news'>
-                    <div class='title'>
-                        <div class='newstitle'>京东快报</div>
-                        <div class='extra'>更多<span> </span><span>></span></div>
+                <div class="noti">
+                    <div class='news'>
+                        <div class='title'>
+                            <div class='newstitle'>京东快报</div>
+                            <div class='extra'>更多<span> </span><span>></span></div>
+                        </div>
+                        <div class='newscontent'>
+                            <ul class='newslist'>
+                                <li>[特惠]手机低至99元</li>
+                                <li>[公告]京东“赣州馆”正式开启</li>
+                                <li>[特惠]澳洲大牌澳佳宝299-100</li>
+                                <li>[公告]京东“极速达”产品升级通告</li>
+                                <li>[特惠]1元抢精品 爽购感恩节 </li>
+                                <li>[特惠]手机低至99元</li>
+                                <li>[公告]京东“赣州馆”正式开启</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class='newscontent'>
-                        <ul class='newslist'>
-                            <li>[特惠]手机低至99元</li>
-                            <li>[公告]京东“赣州馆”正式开启</li>
-                            <li>[特惠]澳洲大牌澳佳宝299-100</li>
-                            <li>[公告]京东“极速达”产品升级通告</li>
-                            <li>[特惠]1元抢精品 爽购感恩节 </li>
-                            <li>[特惠]手机低至99元</li>
-                            <li>[公告]京东“赣州馆”正式开启</li>
-                        </ul>
+                    <div class='lifeservice'>
+                        <div class='title'>
+                            <div class='lifetitle'>生活服务</div>
+                        </div>
+                        <div class='newscontent' >
+                            <ul class='newslist'>
+                                <li>[特惠]手机低至99元</li>
+                                <li>[公告]京东“赣州馆”正式开启</li>
+                                <li>[特惠]澳洲大牌澳佳宝299-100</li>
+                                <li>[公告]京东“极速达”产品升级通告</li>
+                                <li>[特惠]1元抢精品 爽购感恩节 </li>
+                                <li>[特惠]手机低至99元</li>
+                                <li>[公告]京东“赣州馆”正式开启</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class='lifeservice'>
-                    <div class='title'>
-                        <div class='lifetitle'>生活服务</div>
-                    </div>
-                    <div class='newscontent' >
-                        <ul class='newslist'>
-                            <li>[特惠]手机低至99元</li>
-                            <li>[公告]京东“赣州馆”正式开启</li>
-                            <li>[特惠]澳洲大牌澳佳宝299-100</li>
-                            <li>[公告]京东“极速达”产品升级通告</li>
-                            <li>[特惠]1元抢精品 爽购感恩节 </li>
-                            <li>[特惠]手机低至99元</li>
-                            <li>[公告]京东“赣州馆”正式开启</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
