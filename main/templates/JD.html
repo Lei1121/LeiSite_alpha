@@ -50,8 +50,8 @@
         .searchRow-item{
             width: 32%;
             display: inline-block;
-            height: 85px;
-            line-height: 85px;
+            height: 105px;
+            line-height: 105px;
             vertical-align: top;
             text-align: center;
         }
@@ -73,9 +73,9 @@
             width: 15%;
         }
         .cart{
-            background-color: silver;
+            background-color: rgb(249,249,249);
             padding:7px;
-            border: 1px solid gray;
+            border: 1px solid rgb(223,223,223);
         }
         .cart img{
             width: 15px;
@@ -95,7 +95,6 @@
             padding: 0px 10px;
             background: rgb(182,29,29);
             display: inline-block;
-            text-align: center;
             color: white;
         }
         .classification:hover {
@@ -116,13 +115,85 @@
             width: 6%;
             text-align: center;
         }
+        .inner{
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .dd-inner{
+            display: inline-block;
+            vertical-align: top;
+            width: 21.6%;
+        }
+        .itemrow{
+            background-color: rgb(200,22,35);
+            color: white;
+            width: 100%;
+            height: 31px;
+            line-height: 31px;
+        }
+        .innerimg img{
+            margin-top: 10px;
+            margin-left: 5px;
+            display: inline-block;
+            width: 55%;
+            height: 454px;
+        }
+        .itemrowdescribe{
+            padding-left: 10px;
+        }
+        .sidebar{
+            margin-left: 3px;
+            width: 22%;
+            display: inline-block;
+            vertical-align: top;
+            height: 466px;
+        }
+        .news{
+            width:100%;
+            border: 1px solid silver;
+            margin-top: 10px;
+        }
+        .title{
+            border-bottom: 1px solid silver;
+            width: 100%;
+        }
+        .newstitle{
+            padding-left: 5px;
+            height: 31px;
+            line-height: 31px;
+            display: inline-block;
+        }
+        .extra{
+            float: right;
+            padding-right: 5px;
+            display: inline-block;
+            line-height: 31px;
+        }
+        .newslist{
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        .lifeservice{
+            width:100%;
+            border-bottom: 1px solid silver;
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+        }
+        .lifetitle{
+            padding-left: 5px;
+            height: 31px;
+            line-height: 31px;
+            display: inline-block;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class='topbanner'>
-            <!-- 首行导航-->
             <div class='dropbar'>
                 <span>
                     送至：
@@ -147,35 +218,33 @@
                 </span>
             </div>
         </div>
-        <!-- 广告栏-->
         <div class='dbanner' onclick="alert('别点我')">
             <img src='/static/JDpic/dbanner.png'>
         </div>
-        <!-- logo、搜索栏、购物车-->
-        <div class='searchRow'>
-            <div class="searchRow-item">
-                <img src='/static/JDpic/logo.png'>
-            </div>
-            <div class='searchRow-item'>
-                <form action='' class='middle'>
-                    <input class='searching' type="text" name="searching" />
-                    <input type="button" class='searchbtn'value="搜索" onclick="" />
-                </form>
-            </div>
-            <div class='searchRow-item'>
-                <span class="cart">
-                    <span>
-                        <img src='http://www.easyicon.net/api/resizeApi.php?id=1182217&size=24'>
+            <div class='searchRow'>
+                <div class="searchRow-item">
+                    <img src='/static/JDpic/logo.png'>
+                </div>
+                <div class='searchRow-item'>
+                    <form action='' class='middle'>
+                        <input class='searching' type="text" name="searching" />
+                        <input type="button" class='searchbtn'value="搜索" onclick="" />
+                    </form>
+                </div>
+                <div class='searchRow-item'>
+                    <span class="cart">
+                        <span>
+                            <img src='http://www.easyicon.net/api/resizeApi.php?id=1182217&size=24'>
+                        </span>
+                        <span>
+                            我的购物车
+                        </span>
+                        <span>
+                            <img src='http://www.easyicon.net/api/resizeApi.php?id=1190966&size=24'>
+                        </span>
                     </span>
-                    <span>
-                        我的购物车
-                    </span>
-                    <span>
-                        <img src='http://www.easyicon.net/api/resizeApi.php?id=1190966&size=24'>
-                    </span>
-                </span>
+                </div>
             </div>
-        </div>
 
         <div class='classfication-row'>
             <a href='#'>
@@ -210,6 +279,96 @@
             <a href="">
                 <div class='itemlink'>智能</div>
             </a>
+        </div>
+
+        <div class='inner'>
+            <div class='dd-inner'>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>家用电器</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>手机、数码</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>电脑、办公</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>家居、家具</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>男装、女装</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>个护化妆</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>鞋靴、箱包</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>运动户外</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>汽车、汽车用品</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>母婴、玩具乐器</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>视频、酒类</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>营养保健</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>图书、音像</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>彩票、旅行</div>
+                </div>
+                <div class='itemrow'>
+                    <div class='itemrowdescribe'>理财、众筹</div>
+                </div>
+            </div>
+            <a class='innerimg'>
+                <img src='/static/JDpic/middlepic.png'>
+                </img>
+            </a>
+            <div class='sidebar'>
+                <div class='news'>
+                    <div class='title'>
+                        <div class='newstitle'>京东快报</div>
+                        <div class='extra'>更多<span> </span><span>></span></div>
+                    </div>
+                    <div class='newscontent'>
+                        <ul class='newslist'>
+                            <li>[特惠]手机低至99元</li>
+                            <li>[公告]京东“赣州馆”正式开启</li>
+                            <li>[特惠]澳洲大牌澳佳宝299-100</li>
+                            <li>[公告]京东“极速达”产品升级通告</li>
+                            <li>[特惠]1元抢精品 爽购感恩节 </li>
+                            <li>[特惠]手机低至99元</li>
+                            <li>[公告]京东“赣州馆”正式开启</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='lifeservice'>
+                    <div class='title'>
+                        <div class='lifetitle'>生活服务</div>
+                    </div>
+                    <div class='newscontent' >
+                        <ul class='newslist'>
+                            <li>[特惠]手机低至99元</li>
+                            <li>[公告]京东“赣州馆”正式开启</li>
+                            <li>[特惠]澳洲大牌澳佳宝299-100</li>
+                            <li>[公告]京东“极速达”产品升级通告</li>
+                            <li>[特惠]1元抢精品 爽购感恩节 </li>
+                            <li>[特惠]手机低至99元</li>
+                            <li>[公告]京东“赣州馆”正式开启</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

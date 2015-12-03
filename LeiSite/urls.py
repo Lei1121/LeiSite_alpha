@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^zhihu$', views.zhihu),
     url(r'^fakemicrosoft$', views.fakemicrosoft),
     url(r'^JD$', views.JD),
+    url(r'^jspractice$', views.jspractice),
 ]
 

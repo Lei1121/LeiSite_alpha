@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>javascript练习</title>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+        function touchMe(){
+            var userName = prompt("What's your name?", 'Enter your name here.')
+            if (userName){
+                alert('Good to meet you, ' + userName +'.')
+                document.getElementById('mainimg').src='http://www.qq745.com/uploads/allimg/140930/1-1409300R246-51.jpg';
+            }
+        }
+        </script>
+    </head>
+    <body onload="alert(Click Me.);">
+        <div style='margin-top: 100px; text-align:center;'>
+            <img id='mainimg' src='http://img1.touxiang.cn/uploads/20140308/08-074840_485.jpg' onclick="touchMe();">
+        </div>
+    </body>
+</html>

@@ -17,3 +17,6 @@ def index(request):
 
 def JD(request):
     return render_to_response('JD.html')
+
+def jspractice(request):
+    return render_to_response('jspractice.html')
