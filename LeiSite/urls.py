@@ -25,5 +25,7 @@ urlpatterns = [
     url(r'^fakemicrosoft$', views.fakemicrosoft),
     url(r'^JD$', views.JD),
     url(r'^jspractice$', views.jspractice),
+    url(r'^Carousellianxi$', views.Carousellianxi),
+    url(r'^school$', views.school),
 ]
 

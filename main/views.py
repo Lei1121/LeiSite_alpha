@@ -20,3 +20,9 @@ def JD(request):
 
 def jspractice(request):
     return render_to_response('jspractice.html')
+
+def Carousellianxi(request):
+    return render_to_response('Carousellianxi.html')
+
+def school(request):
+    return render_to_response('school.html')
