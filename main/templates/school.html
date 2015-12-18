@@ -13,20 +13,19 @@
     }
     .topBanner{
         width: 100%;
-        position: fixed;
         z-index: 999;
     }
     .breadcrumb{
         padding-left: 10%;
         padding-right: 10%;
-        margin-bottom: 9px;
+        margin-bottom: 0px;
     }
     .navbar{
         width: 100%;
         margin-bottom: 0px;
     }
     .subnavbar{
-        margin-top: 36.66px;
+        /*margin-top: 36.66px;*/
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -111,35 +110,14 @@
     .tothetop:hover{
         opacity: 0.3;
     }
+    .affix {
+        top: 0px;
+    }
     </style>
 </head>
 <body>
     <div>
         <span id="top" name="top"></span>
-        <div class='topBanner'>
-            <ol class="breadcrumb">
-                <li class='breadcrumbText'>
-                    <a href="#">
-                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188703&size=24'> 微信
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188691&size=24'> 微博
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1154011&size=16'> 电话
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188698&size=16'> 在线咨询
-                    </a>
-                </li>
-            </ol>
-        </div>
 
         <nav class='navbar'>
             <div class='subnavbar'>
@@ -226,6 +204,31 @@
                     <a class="btn btn-primary" href="#" role="button">Learn More</a>
                 </div>
             </div>
+        </div>
+
+        <div class='topBanner' data-spy="affix" data-offset-top="610">
+            <ol class="breadcrumb">
+                <li class='breadcrumbText'>
+                    <a href="#">
+                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188703&size=24'> 微信
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188691&size=24'> 微博
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1154011&size=16'> 电话
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img style='opacity:0.4' src='http://www.easyicon.net/api/resizeApi.php?id=1188698&size=16'> 在线咨询
+                    </a>
+                </li>
+            </ol>
         </div>
 
         <div class='responsive'>
