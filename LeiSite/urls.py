@@ -27,5 +27,7 @@ urlpatterns = [
     url(r'^jspractice$', views.jspractice),
     url(r'^Carousellianxi$', views.Carousellianxi),
     url(r'^school$', views.school),
+    url(r'^donut$', views.donut),
+    url(r'^BeijingMore$', views.BeijingMore),
 ]
 

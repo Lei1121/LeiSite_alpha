@@ -6,13 +6,24 @@
 
         </style>
         <script type="text/javascript">
-        function touchMe(){
-            var userName = prompt("What's your name?", 'Enter your name here.')
-            if (userName){
-                alert('Good to meet you, ' + userName +'.')
-                document.getElementById('mainimg').src='http://www.qq745.com/uploads/allimg/140930/1-1409300R246-51.jpg';
-            }
+        var userName;
+        function greetUser(){
+            alert('Hello.');
         }
+        function touchMe(){
+            if (userName){
+                alert('i like the attention, ' + userName +'. Thanks');
+            }
+            else{
+            userName = prompt("What's your name?", 'Enter your name here.')
+            if (userName)
+                alert('Good to meet you, ' + userName +'.');
+            }
+                document.getElementById('mainimg').src='http://www.qq745.com/uploads/allimg/140930/1-1409300R246-51.jpg';
+                setTimeout("document.getElementById('mainimg').src='http://img1.touxiang.cn/uploads/20140308/08-074840_485.jpg';",
+                    1 * 60 *1000);
+            }
+
         </script>
     </head>
     <body onload="alert(Click Me.);">

@@ -26,3 +26,10 @@ def Carousellianxi(request):
 
 def school(request):
     return render_to_response('school.html')
+
+def donut(request):
+    return render_to_response('donut.html')
+
+def BeijingMore(request):
+    return render_to_response('BeijingMore.html')
+
