@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>BeijingMore</title>
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/static/js/jquery.lazyload.min.js"></script>
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="/static/css/KyanCssUtil.css" rel="stylesheet">
@@ -63,7 +64,7 @@
             background-image: url("/static/BeijingMore/subwaymap.jpg");
             background-size: 100%;
         }
-        #div-food{
+/*        #div-food{
             background-image: url("/static/BeijingMore/tanghulu.jpg");
         }
         #div-music{
@@ -74,7 +75,7 @@
         }
         #div-nature{
             background-image: url("/static/BeijingMore/nature.jpg");
-        }
+        }*/
     /* div-text */
         .div-text{
             word-wrap: break-word;
@@ -250,7 +251,7 @@
         </div>
 
     <!-- 食物栏 -->
-        <div class="row content-div hidden-xs" id='div-food'>
+        <div class="row content-div lazyload" id='div-food' data-original='/static/BeijingMore/tanghulu.jpg'>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 div-content-text div-text">
                 <h1><b>Foods</b></h1>
                 <p class="text-muted">
@@ -260,7 +261,7 @@
             </div>
         </div>
     <!-- 音乐 -->
-        <div class="row content-div" id="div-music">
+        <div class="row content-div lazyload" id="div-music" data-original='/static/BeijingMore/music.jpg'>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-6 div-content-text div-text">
                 <h1><b>Music</b></h1>
                 <p class="text-muted">
@@ -270,7 +271,7 @@
             </div>
         </div>
     <!-- 体育 -->
-        <div class="row content-div" id="div-sports">
+        <div class="row content-div lazyload" id="div-sports" data-original='/static/BeijingMore/sports.jpg'>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 div-content-text div-text">
                 <h1><b>Sports</b></h1>
                 <p class="text-muted">
@@ -280,7 +281,7 @@
             </div>
         </div>
     <!-- 自然 -->
-        <div class="row content-div" id="div-nature">
+        <div class="row content-div lazyload" id="div-nature" data-original='/static/BeijingMore/nature.jpg'>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-6 div-content-text div-text">
                 <h1><b>Nature</b></h1>
                 <p class="text-muted">
@@ -292,14 +293,14 @@
     <!-- 轮播图 -->
         <div class="row" id="div-slide">
             <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
-                <div class="swiper-wrapper" style="transform: translate3d(-54.3333px, 0px, 0px); transition-duration: 0ms;">
-                    <div class="swiper-slide foods-slide" style="width: 620px; margin-right: 5px;"><b>Foods</b></div>
-                    <div class="swiper-slide sports-slide" style="width: 620px; margin-right: 5px;"><b>Sports</b></div>
-                    <div class="swiper-slide culture-slide" style="width: 620px; margin-right: 5px;"><b>Cutlure</b></div>
-                    <div class="swiper-slide shopping-slide" style="width: 620px; margin-right: 5px;"><b>Shopping</b></div>
-                    <div class="swiper-slide arts-slide" style="width: 620px; margin-right: 5px;"><b>Arts</b></div>
-                    <div class="swiper-slide music-slide" style="width: 620px; margin-right: 5px;"><b>Music</b></div>
-                    <div class="swiper-slide nature-slide" style="width: 620px; margin-right: 5px;"><b>Nature</b></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide foods-slide"><b>Foods</b></div>
+                    <div class="swiper-slide sports-slide"><b>Sports</b></div>
+                    <div class="swiper-slide culture-slide"><b>Cutlure</b></div>
+                    <div class="swiper-slide shopping-slide"><b>Shopping</b></div>
+                    <div class="swiper-slide arts-slide"><b>Arts</b></div>
+                    <div class="swiper-slide music-slide"><b>Music</b></div>
+                    <div class="swiper-slide nature-slide"><b>Nature</b></div>
                 </div>
                 <div class="swiper-button-prev swiper-button-white"></div>
                 <div class="swiper-button-next swiper-button-white"></div>
@@ -354,6 +355,11 @@
             shortSwipes : false,
             grabCursor : true,
         });
+        $(function(){
+            $('.lazyload').lazyload({
+                effect: 'fadeIn'
+            })
+        })
     </script>
 </body>
 </html>
