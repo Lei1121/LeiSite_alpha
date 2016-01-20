@@ -154,6 +154,8 @@
             color: #fff;
             font-size: 36px;
             text-align: center;
+            background-size: cover !important;
+            background-position: 50% 50% !important;
         }
     /* footer */
         .footer{
@@ -344,16 +346,26 @@
     </div><!--.container-fluid-->
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
+            //effect: 'coverflow',
+            speed: 1000,
             slidesPerView: 3,
+            centeredSlides: false,
             paginationClickable: true,
             spaceBetween: 5,
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+            },
             freeMode: true,
+            freeModeSticky: true,
+            freeModeMomentum: true,
+            freeModeMomentumBounce: false,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next',
-            loop : true,
-            shortSwipes : false,
-            grabCursor : true,
+            loop: true,
+            shortSwipes: true,
+            grabCursor: true,
         });
         $(function(){
             $('.lazyload').lazyload({
