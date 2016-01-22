@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>BeijingMore</title>
+    <title>Beijing More | Every street has a story.</title>
     <link rel="icon" href="/static/BeijingMore/logo.png">
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/static/js/jquery.lazyload.min.js"></script>
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="/static/css/KyanCssUtil.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/swiper-3.2.7.min.css">
-    <script src="/static/css/swiper-3.2.7.min.js"></script>
+    <link rel="stylesheet" href="/static/swiper/swiper-3.2.7.min.css">
+    <script src="/static/swiper/swiper-3.2.7.min.js"></script>
+    <link rel="stylesheet" href="/static/fontawesome/css/font-awesome.min.css">
     <style>
         body {
             font-family: 'Tahoma';
@@ -19,7 +20,7 @@
     /* topbar */
         .topBar{
             background-color: #D32F2F;
-            font-size: 16px;
+            font-size: medium;
         }
         .navbar{
             margin-bottom: 0;
@@ -80,7 +81,7 @@
         .div-text{
             word-wrap: break-word;
             border-radius: 5px;
-            font-size: 22px;
+            font-size: medium;
             line-height: 35px;
         }
         @media (max-width: 768px){
@@ -96,7 +97,7 @@
             background-position: 50% 50% !important;
         }
         .div2-text{
-            margin-top: -120px;
+            margin-top: -100px;
             margin-bottom: 50px;
             background-color: #F44336;
             color: white;
@@ -196,7 +197,7 @@
                     <li><a class="befast" href="#div-food">Food</a></li>
                     <li><a class="befast" href="#div-music">Music</a></li>
                     <li><a class="befast" href="#div-sports">Sports</a></li>
-                    <li><a class="befast" href="#div-nature">Nature</a></li>
+                    <li><a class="befast" href="#div-shopping">Shopping</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a class="befast" href="#div-slide">Slide</a></li>
                     <!-- <li class="dropdown">
@@ -242,7 +243,7 @@
         <div class="row" id="div2">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="div2-text div-text">
-                    Beijing is the capital of the most populous country in the world, the People's Republic of China. With a population of 21.5 million people, it is the nation's second-largest city after Shanghai. It was also the seat of the Ming and Qing dynasty emperors until the formation of a republic in 1911. Beijing is the political, educational and cultural centre of the country and as such it is rich in historical sites and important government and cultural institutions.
+                    <i class="icon-quote-left icon-4x pull-left icon-muted"></i>Beijing is the capital of the most populous country in the world, the People's Republic of China. With a population of 21.5 million people, it is the nation's second-largest city after Shanghai. It was also the seat of the Ming and Qing dynasty emperors until the formation of a republic in 1911. Beijing is the political, educational and cultural centre of the country and as such it is rich in historical sites and important government and cultural institutions.
                 </div>
             </div>
         </div>
@@ -252,7 +253,7 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 div-content-text div-text">
                 <h1><b>Foods</b></h1>
                 <p class="text-muted">
-                    The temps may be cooling down, but you can warm up in a number of ways across Tennessee. Warm your heart as you take in the views of winter wildlife. Watch the competition heat up in some of Tennessee’s most competitive sports. Feel the heat of the hickory burning as we prepare our famous died-and-gone-to-heaven barbecue. The temps may be cooling down, but you can warm up in a number of ways across Tennessee.
+                    As the capital of China, Beijing has developed its own culinary identity- Beijing Cuisine. The perennial favorite in Beijing is authentic Beijing Roast Duck which can be found at Quanjude and Bianyifang restaurants. Other choices include Imperial Court Food, Official Food and tasty snacks, which can be enjoyed at the local flavor restaurants.
                 </p>
                 <button type="button" class="btn btn-info btn-lg" style="float:right;">What's more?</button>
             </div>
@@ -262,7 +263,7 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-6 div-content-text div-text">
                 <h1><b>Music</b></h1>
                 <p class="text-muted">
-                The temps may be cooling down, but you can warm up in a number of ways across Tennessee. Warm your heart as you take in the views of winter wildlife. Watch the competition heat up in some of Tennessee’s most competitive sports. Feel the heat of the hickory burning as we prepare our famous died-and-gone-to-heaven barbecue. The temps may be cooling down, but you can warm up in a number of ways across Tennessee.
+                    The Peking Opera is considered the most famous of all the traditional opera performed around China. This kind of opera is nothing like western opera with costumes, singing style, music and spectator reactions being distinctly Chinese. The plot is usually quite simple, so you might be able to understand some of what happens even if you do not understand the language. Some of the best places to watch Beijing Opera are found in Xuanwu District including Huguang Huguang Theatre and Lao She Teahouse. There are also a number in Dongcheng District including Chang'an Grand Theatre.
                 </p>
                 <button type="button" class="btn btn-info btn-lg" style="float:right;">What's more?</button>
             </div>
@@ -272,18 +273,17 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 div-content-text div-text">
                 <h1><b>Sports</b></h1>
                 <p class="text-muted">
-                The temps may be cooling down, but you can warm up in a number of ways across Tennessee. Warm your heart as you take in the views of winter wildlife. Watch the competition heat up in some of Tennessee’s most competitive sports. Feel the heat of the hickory burning as we prepare our famous died-and-gone-to-heaven barbecue. The temps may be cooling down, but you can warm up in a number of ways across Tennessee.
+                    Beijing Guoan F.C. is a professional Chinese football club that currently participates in the Chinese Super League under licence from the Chinese Football Association. The club's predecessor was called Beijing Football Club and they predominantly played in the top tier, where they won several domestic league and cup titles. On December 31, 1992 the club was reorganized to become a completely professional football club making them one of the founding members of the first fully professional top tier league in China. Since then they have gone on to win their first ever professional league title in the 2009 league season as well as the 1996, 1997 and 2003 Chinese FA Cup.
                 </p>
                 <button type="button" class="btn btn-info btn-lg" style="float:right;">What's more?</button>
             </div>
         </div>
     <!-- 自然 -->
-        <div class="row content-div lazyload" id="div-nature" data-original='/static/BeijingMore/nature.jpg'>
+        <div class="row content-div lazyload" id="div-shopping" data-original='/static/BeijingMore/shopping.jpg'>
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-6 div-content-text div-text">
-                <h1><b>Nature</b></h1>
+                <h1><b>Shopping</b></h1>
                 <p class="text-muted">
-                The temps may be cooling down, but you can warm up in a number of ways across Tennessee. Warm your heart as you take in the views of winter wildlife. Watch the competition heat up in some of Tennessee’s most competitive sports. Feel the heat of the hickory burning as we prepare our famous died-and-gone-to-heaven barbecue. The temps may be cooling down, but you can warm up in a number of ways across Tennessee.
-                </p>
+                    The are a number of interesting markets around Beijing where you can find all kind of cheap stuff. Some of the most popular places are Xizhimen in Xicheng District, Silk Street or Panjiayuan in Chaoyang District and Hong Qiao Market in Chongwen District. As an alternative to the markets you can go to some of the shopping areas lined with shops. This includes Nanluoguoxiang in Dongcheng District and Qianmen Dajie Pedestrian Street, Dashilan and Liulichang in Xuanwu District. If you are looking for traditional Chinese food shops try Yinhehua Vegetarian in Dongcheng District, Daoxiangcun, Liubiju or The Tea Street in Xuanwu District. Please note that Chongwenmen Food Market in Chongwen District has been demolished in 2010.</p>
                 <button type="button" class="btn btn-info btn-lg" style="float:right;">What's more?</button>
             </div>
         </div>
