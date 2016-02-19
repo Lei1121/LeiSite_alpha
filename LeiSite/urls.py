@@ -29,5 +29,7 @@ urlpatterns = [
     url(r'^school$', views.school),
     url(r'^donut$', views.donut),
     url(r'^BeijingMore$', views.BeijingMore),
+    url(r'^food$', views.food),
+    url(r'^music$', views.music),
 ]
 

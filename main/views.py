@@ -33,3 +33,9 @@ def donut(request):
 def BeijingMore(request):
     return render_to_response('BeijingMore.html')
 
+def food(request):
+    return render_to_response('food.html')
+
+def music(request):
+    return render_to_response('music.html')
+
