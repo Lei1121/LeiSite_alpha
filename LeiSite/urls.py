@@ -29,4 +29,3 @@ urlpatterns = [
     url(r'^school$', views.school),
     url(r'^donut$', views.donut),
 ]
-
