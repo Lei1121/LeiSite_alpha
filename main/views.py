@@ -29,16 +29,3 @@ def school(request):
 
 def donut(request):
     return render_to_response('donut.html')
-
-def BeijingMore(request):
-    return render_to_response('BeijingMore.html')
-
-def food(request):
-    return render_to_response('food.html')
-
-def music(request):
-    return render_to_response('music.html')
-
-def calculator(request):
-    return render_to_response('calculator.html')
-
