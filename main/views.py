@@ -39,3 +39,6 @@ def food(request):
 def music(request):
     return render_to_response('music.html')
 
+def calculator(request):
+    return render_to_response('calculator.html')
+

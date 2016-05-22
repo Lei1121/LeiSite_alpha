@@ -31,5 +31,6 @@ urlpatterns = [
     url(r'^BeijingMore$', views.BeijingMore),
     url(r'^food$', views.food),
     url(r'^music$', views.music),
+    url(r'^calculator$', views.calculator),
 ]
 

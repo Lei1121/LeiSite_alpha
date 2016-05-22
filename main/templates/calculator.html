@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>计算器|Calculator</title>
+        <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <style type="text/css">
+        </style>
+        <script type="text/javascript">
+
+        window.onload=function(){
+            document.getElementById("result").style.background= "silver"
+        }
+        function add(a,b){
+            // calculate a+b
+            var c = a + b
+            return c;
+        }
+        function minus(a,b){
+            var c = a - b
+            return c;
+        }
+        function multiply(a,b){
+            var c = a * b
+            return c;
+        }
+        function divide(a,b){
+            if (b==0){
+                document.getElementById("inputs").style.background= "red"
+                return "除数不能为0"
+            }
+            var c = a / b
+            return c;
+        }
+        function submit(){ // click on the 计算 button
+            document.getElementById("inputs").style.background= "white"
+            //check 0
+            if (document.getElementById("first").value=="") {
+                document.getElementById("first").value = 0
+            }
+            if (document.getElementById("second").value==""){
+                document.getElementById("second").value = 0
+            }
+            //get value
+            var first=document.getElementById("first").value;
+            var second=document.getElementById("second").value;
+            var operator=document.getElementById("operator").value;
+            //comfirm if a number
+            first = parseInt(first)
+            second = parseInt(second)
+            //calculate
+            if (operator=="add") {
+                var result= add(first, second);
+            }
+            else if (operator=="minus") {
+                var result= minus(first, second);
+            }
+            else if (operator=="multiply") {
+                var result= multiply(first, second);
+            }
+            else if (operator=="divide") {
+                var result= divide(first, second);
+            }
+            //show
+            document.getElementById("result").value=result;
+        }
+        function clean(){
+            document.getElementById("first").value=""
+            document.getElementById("second").value=""
+            document.getElementById("result").value=""
+        }
+        function backspaceEle(ele_id){
+            // 取value
+            var ele_text=document.getElementById(ele_id).value
+            // 判断长度
+            var ele_textlength=ele_text.length
+            // 截取0到长度-1
+            var new_ele_text = ele_text.substr(0, ele_textlength-1)
+            document.getElementById(ele_id).value=new_ele_text
+            submit()
+        }
+        function display(num){
+            var first=document.getElementById("first").value
+            var new_first_text = first + num;
+            document.getElementById("first").value=new_first_text
+        }
+        </script>
+        <script>
+            $(document).ready(function(){
+
+            });
+            function getBook(){
+                q = document.getElementById('first').value
+                $.ajax({
+                    type : "GET",
+                    url : "https://api.douban.com/v2/book/search",
+                    data : {'q':q},
+                    dataType: "JSONP",
+                    async:true,
+                    success: function(data){
+                        console.log(data)
+                        coverurl = data['books'][0]['images']['large']
+                        $('#cover').attr('src',coverurl)
+                    },
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="inputs">
+                <input id="first" type="text" name="first" value="">
+                <button onclick="backspaceEle('first')" id="backspaceFirst"><-</button>
+                <select id="operator">
+                    <option value="add">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">÷</option>
+                </select>
+                <input id="second" type="text" name="second" value="">
+                <button onclick="backspaceEle('second')" id="backspaceSecond"><-</button>
+                <span>=</span>
+                <input type="text" id="result" value="" readonly="readonly">
+            </div>
+            <div>
+                <button onclick="submit()" id="submit">计算</button>
+                <button onclick="clean()" id="clean">清除</button>
+                <button onclick="getBook()">Get Book</button>
+                <br><br>
+                <button onclick="display('0')">0</button><br>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button><br>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button><br>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button><br>
+            </div>
+            <img id='cover'>
+        </div>
+
+
+    </body>
+</html>
